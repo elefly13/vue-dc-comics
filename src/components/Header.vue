@@ -1,16 +1,16 @@
 <template>
   <header>
-    <div class="box_header">
+    <div class="box-header">
       <div class="logo">
         <img src="@/assets/img/dc-logo.png" alt="logo-dc">
       </div>
-      <nav>
+      <div class="nav">
         <ul>
           <li v-for="(link,index) in links" :key="index">
             <a href="#" :class="(link.current) ? 'active' : null">{{ link.text }}</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </div>
   </header>
 </template>
@@ -71,7 +71,7 @@ export default {
           url: "#",
           current: false,
         }
-      ]
+      ],
     }
     
   }
@@ -85,31 +85,54 @@ export default {
     @import "../assets/style/mixins.scss";
 
     header {
-    width: 100%;
-    height: 130px;
-    margin-top: 50px;
-    background-color: white;
+     width: 100%;
+     height: 170px;
+     margin-top: 50px;
+     background-color: $secondary;
 
         .box-header {
             width: 70%;
-            height: 130px;
+            height: 170px;
+            margin: 0 auto;
+             @include center();
+
+            .logo {
+                width: 100px;
+                height: 100px;
+
+                img {
+                    width: 100px;
+                }
+            }
 
             ul {
+              
+            display: flex;
+            justify-content: flex-end;
             list-style: none;
-            @include center();
+           
+                li {
 
-                li a {
                 display: inline-block;
-                padding: 10px;
-                text-decoration: none;
-                font-weight: 600;
-                color: $secondary;
 
-                    &:hover,
-                    &.active {
-                        color: $primary;
-                    }
-                }    
+                    a {
+                    display: inline-block;
+                    line-height: 145px;
+                    padding: 10px;
+                    text-decoration: none;
+                    font-weight: 600;
+                    color: black;
+                    
+
+                        &:hover,
+                        &.active {
+                            color: $primary;
+                            border-bottom: 5px solid $primary;
+                        }
+                    }    
+                }
+
+                
             }
         }    
     }

@@ -8,9 +8,9 @@
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Main from './components/Main.vue'
-import Footer from './components/Footer.vue'
+import Header from './components/Header.vue';
+import Main from './components/Main.vue';
+import Footer from './components/Footer.vue';
 
 
 export default {
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+// @import "../assets/style/generals";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
@@ -38,8 +38,6 @@ body {
   font-family: 'Roboto', sans-serif;
 
 }
-
-// @import "./style/generals";
 
 
 // #app {

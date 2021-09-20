@@ -3,14 +3,14 @@
     
 
     @if $type == 'vertical' {
-        justify-content: center;
+        justify-content: space-between;
     }
     @else if $type == 'horizontal' {
         align-items: center;
     }
     @else if $type == 'both' {
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
 
 }
