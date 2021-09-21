@@ -4,16 +4,24 @@
       <div class="box-container">
         <div class="current">CURRENT SERIES</div>
       </div>
-      
     </div>
-    
+    <MainSeries/>
   </div>
 </template>
 
 <script>
-
+import MainSeries from '@/components/MainSeries.vue'
+// import Series from 'Series.js'
 export default {
   name: 'Main',
+  components: {
+    MainSeries
+  },
+  // data() {
+  //   return {
+  //     series: Series
+  //   }
+  // }
   
 }
 </script>
@@ -25,7 +33,7 @@ export default {
 
 .box-main {
   width: 100vw;
-  height: 450px;
+ 
   .jumbotron {
     
     width: 100%;
