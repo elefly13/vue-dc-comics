@@ -30,7 +30,7 @@ export default {
         {
           text: "COMICS",
           url: "#",
-          current: true,
+          current: false,
         },
         {
           text: "MOVIES",

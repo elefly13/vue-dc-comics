@@ -55,6 +55,8 @@ export default {
           color: $secondary;
           text-align: center;
           line-height: 70px;
+          font-weight: 900;
+          font-size: 20px;
 
         }
       }

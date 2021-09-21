@@ -3,7 +3,7 @@
         <div class="box-series">
             <div class="card" v-for="(serie,index) in series" :key="index">
                 <div class="box-img">
-                    <!-- <img :src="require(`../assets/${serie.thumb}`)" alt=""> -->
+                    <img :src="serie.thumb" alt="serie.series">
                 </div>
                 <h3>{{serie.series}}</h3>
             </div>
@@ -112,19 +112,14 @@ export default {
             justify-content: space-between;
             flex-wrap: wrap;
             width: 70%;
-            padding-bottom: 40px;
-            padding-top: 40px;
+            padding-bottom: 50px;
+            padding-top: 50px;
             margin: 0 auto;
                 .card {
-
                     width: calc((100% / 6) - 20px);
-                    height: 200px;
-                    
                     margin: 10px;
                         .box-img {
-                            height: 50px;
                             width: 100%;
-                            background-color: yellowgreen;
                                 img {
                                     width: 100%;
 
@@ -133,6 +128,7 @@ export default {
                         h3 {
                             color: $secondary;
                             padding: 20px 10px;
+                            font-weight: 400;
                         }
 
                 } 
