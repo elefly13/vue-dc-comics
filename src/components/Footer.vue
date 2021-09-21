@@ -1,6 +1,7 @@
 <template>
   <div class="box-footer">
-    div
+    
+    
     
   </div>
 
@@ -21,7 +22,7 @@ export default {
   width: 100%;
   height: 400px;
   
-  background-image: src("../assets/img/footer-bg.jpg");
+  background-image: url("../assets/img/footer-bg.jpg");
 }
 
 
